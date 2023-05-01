@@ -1,0 +1,112 @@
+====================
+Model Name : RatUNet
+
+Rayleigh Level : 0.1
+
+ ssim with model : 0.850763201713562
+====================
+====================
+Model Name : RatUNet
+
+Rayleigh Level : 0.25
+
+ ssim with model : 0.708087146282196
+====================
+====================
+Model Name : RatUNet
+
+Rayleigh Level : 0.5
+
+ ssim with model : 0.6514033675193787
+====================
+====================
+Model Name : RatUNet
+
+Rayleigh Level : 0.75
+
+ ssim with model : 0.5443735718727112
+====================
+====================
+Model Name : Attention_Unet
+
+Rayleigh Level : 0.1
+
+ ssim with model : 0.7716248035430908
+====================
+====================
+Model Name : Attention_Unet
+
+Rayleigh Level : 0.25
+
+ ssim with model : 0.6768680810928345
+====================
+====================
+Model Name : Attention_Unet
+
+Rayleigh Level : 0.5
+
+ ssim with model : 0.6151562333106995
+====================
+====================
+Model Name : Attention_Unet
+
+Rayleigh Level : 0.75
+
+ ssim with model : 0.5267571806907654
+====================
+====================
+Model Name : ResUNet
+
+Rayleigh Level : 0.1
+
+ ssim with model : 0.8789663910865784
+====================
+====================
+Model Name : ResUNet
+
+Rayleigh Level : 0.25
+
+ ssim with model : 0.7988818287849426
+====================
+====================
+Model Name : ResUNet
+
+Rayleigh Level : 0.5
+
+ ssim with model : 0.6871629953384399
+====================
+====================
+Model Name : ResUNet
+
+Rayleigh Level : 0.75
+
+ ssim with model : 0.6230465769767761
+====================
+====================
+Model Name : AirUNet
+
+Rayleigh Level : 0.1
+
+ ssim with model : 0.9070568084716797
+====================
+====================
+Model Name : AirUNet
+
+Rayleigh Level : 0.25
+
+ ssim with model : 0.8253473043441772
+====================
+====================
+Model Name : AirUNet
+
+Rayleigh Level : 0.5
+
+ ssim with model : 0.7090939879417419
+====================
+====================
+Model Name : AirUNet
+
+Rayleigh Level : 0.75
+
+ ssim with model : 0.639930009841919
+====================

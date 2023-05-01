@@ -1,0 +1,18 @@
+==========
+ Average Results :   
+
+ Model Name : AirUNet 
+ Raylegih level: 0.75 
+ 
+Loss : 0.113356
+ 
+score : 0.886644
+
+ 
+ Best Batch Results : 32 
+ Model Name : AirUNet 
+ Raylegih level: 0.75 
+ 
+Loss : 0.045307
+ 
+score : 0.954693

@@ -1,0 +1,18 @@
+==========
+ Average Results :   
+
+ Model Name : Attention_Unet 
+ Raylegih level: 0.75 
+ 
+Loss : 0.149028
+ 
+score : 0.850972
+
+ 
+ Best Batch Results : 52 
+ Model Name : Attention_Unet 
+ Raylegih level: 0.75 
+ 
+Loss : 0.082954
+ 
+score : 0.917046

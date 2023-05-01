@@ -1,0 +1,18 @@
+==========
+ Average Results :   
+
+ Model Name : ResUNet 
+ Raylegih level: 0.25 
+ 
+Loss : 0.074792
+ 
+score : 0.925208
+
+ 
+ Best Batch Results : 107 
+ Model Name : ResUNet 
+ Raylegih level: 0.25 
+ 
+Loss : 0.038692
+ 
+score : 0.961308

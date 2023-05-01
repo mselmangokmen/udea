@@ -1,0 +1,18 @@
+==========
+ Average Results :   
+
+ Model Name : RatUNet 
+ Raylegih level: 0.1 
+ 
+Loss : 0.049927
+ 
+score : 0.950073
+
+ 
+ Best Batch Results : 27 
+ Model Name : RatUNet 
+ Raylegih level: 0.1 
+ 
+Loss : 0.024391
+ 
+score : 0.975609
