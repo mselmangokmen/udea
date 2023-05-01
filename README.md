@@ -6,7 +6,7 @@
 You can reach the related article by clicking this [link](https://github.com/mselmangokmen/udea/blob/main/air_unet.pdf). <br>
 If you want to run a denoising process on ultrasound images directly, please download the full trained models and datasets from the link provided below. <br> https://drive.google.com/file/d/1gb-WAMf2atUzktwq-wZ4DJv-W4z-yD09/view?usp=sharing <br>
 Don't forget to run 'pip install -r requirements.txt' for installing all required libraries. <br>
-
+Also please change **device** before training or testing the model regarding your device.
 
 The proposed model Air U-Net is defined as model type 4 in mymodel file. In mymodel file 4 different models are employed and you can choose any model among Rat U-Net, Res U-Net, Attention U-Net and our proposed model Air U-Net for traning. <br>
 The models were trained saved in the folders which named same as model name. Also, training results containg loss values in epochs and a plot are saved in the directories. <br>
@@ -25,10 +25,13 @@ from model.mymodel import UNet
 train_inits = [{'model_type':3,'model_name':"RatUNet"},{'model_type':1,'model_name':"ResUNet"},{'model_type':2,'model_name':"Attention_Unet"},{'model_type': 4, 'model_name': "AirUNet"}]
 batch_size = 50
 num_epochs = 100
+ 
 device = torch.device('mps' )
+#device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+
 start_factor = 32
 lr = 0.0005
- 
+
 rayleigh_list = [ 0.1,0.25,0.5,0.75 ] 
 for d in train_inits:
     for r in rayleigh_list:
@@ -57,6 +60,7 @@ test_inits = [{'model_type':3,'model_name':"RatUNet"},{'model_type':1,'model_nam
  
 batch_size = 10 
 device = torch.device('mps' ) 
+#device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 start_factor = 32
 
 rayleigh_list = [0.1,0.25,0.5,0.75] 
@@ -81,6 +85,7 @@ from  functions  import  test_ultrasound_image
  
 test_inits = [ {'model_type':3,'model_name':"RatUNet"},{'model_type':2,'model_name':"Attention_Unet"} ,{'model_type':1,'model_name':"ResUNet"},{'model_type': 4, 'model_name': "AirUNet"}] 
 device = torch.device('mps') 
+#device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 startFactor=32 
 rayleigh_list = [0.1,0.25 ,0.5,0.75] 
 video_image_path = "dataset/ultrasound/vid2" 
