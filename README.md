@@ -3,8 +3,8 @@
 
 <p> This project is created for mid-term project of CS685 class. The project aims denoising ultrasound images. <br>
 
-You can reach the related article by clicking this link. <br>
-If you want to run a denoising process on ultrasound images please download the full trained models and datasets from the link provided below. <br>
+You can reach the related article by clicking this [link](https://github.com/mselmangokmen/udea/blob/main/air_unet.pdf). <br>
+If you want to run a denoising process on ultrasound images directly, please download the full trained models and datasets from the link provided below. Don't forget to run 'pip install -r requirements.txt' for installing all required libraries. <br>
 
 
 The proposed model Air U-Net is defined as model type 4 in mymodel file. In mymodel file 4 different models are employed and you can choose any model among Rat U-Net, Res U-Net, Attention U-Net and our proposed model Air U-Net for traning. <br>
