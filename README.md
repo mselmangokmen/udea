@@ -1,4 +1,4 @@
-## Attention-guided U-Net Model with Improved Residual Blocks]{ Attention-guided U-Net Model with Improved Residual Blocks for Ultrasound Image Denoising
+## Attention-guided U-Net Model with Improved Residual Blocks
 
 <p> This project is created for mid-term project of CS685 class. The project aims denoising ultrasound images. <br>
 
@@ -35,3 +35,9 @@ for d in train_inits:
         train_model(dataloaders=dataloaders, model_name=d['model_name'], noise_level=r, model=model,
                     optimizer=optimizer, device=device, num_epochs=num_epochs)
 ```
+
+The DND dataset used for training [^1]. The DND dataset contains real-life noisy images.  
+
+
+[^1]: Real-world Noisy Image Denoising: A New Benchmark
+ 
