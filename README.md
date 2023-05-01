@@ -6,7 +6,7 @@
 You can reach the related article by clicking this [link](https://github.com/mselmangokmen/udea/blob/main/air_unet.pdf). <br>
 If you want to run a denoising process on ultrasound images directly, please download the full trained models and datasets from the link provided below. <br> https://drive.google.com/file/d/1gb-WAMf2atUzktwq-wZ4DJv-W4z-yD09/view?usp=sharing <br>
 Don't forget to run 'pip install -r requirements.txt' for installing all required libraries. <br>
-Also please change **device** before training or testing the model regarding your device.
+Also please change **device** before training or testing the model regarding your processing unit.
 
 The proposed model Air U-Net is defined as model type 4 in mymodel file. In mymodel file 4 different models are employed and you can choose any model among Rat U-Net, Res U-Net, Attention U-Net and our proposed model Air U-Net for traning. <br>
 The models were trained saved in the folders which named same as model name. Also, training results containg loss values in epochs and a plot are saved in the directories. <br>
