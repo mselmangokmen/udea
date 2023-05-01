@@ -63,13 +63,13 @@ rayleigh_list = [0.1,0.25,0.5,0.75]
 testDataLoader = myTestDataLoader(batch_size=10 ) 
 test_loader = testDataLoader.getDataLoader()['test'] 
 for  d  in  test_inits: 
-for  r  in  rayleigh_list: 
-gc.collect() 
-torch.cuda.empty_cache() 
-model = UNet(out_channel=1,modelType=d['model_type'],startFactor=start_factor).to(device=device) 
-model_path = d['model_name'] + '/'+ d['model_name']+ '_ray_' +str(int(r*100)) 
-model.load_state_dict(torch.load(model_path)) 
-test_model(model_name= d['model_name'],model= model,test_loader=test_loader,noise_level =r,device= device) 
+ for  r  in  rayleigh_list: 
+  gc.collect() 
+  torch.cuda.empty_cache() 
+  model = UNet(out_channel=1,modelType=d['model_type'],startFactor=start_factor).to(device=device) 
+  model_path = d['model_name'] + '/'+ d['model_name']+ '_ray_' +str(int(r*100)) 
+  model.load_state_dict(torch.load(model_path)) 
+  test_model(model_name= d['model_name'],model= model,test_loader=test_loader,noise_level =r,device= device) 
 ```
 
  ## #Ultrasound Denoising
@@ -87,11 +87,11 @@ video_image_path = "dataset/ultrasound/vid2"
 image_index= 22 
 results ='' 
 for  d  in  test_inits: 
-for  r  in  rayleigh_list: 
-image_result_path = 'image_'+ str(image_index) 
-folder_path = 'ultrasound_results/' + image_result_path 
-results += test_ultrasound_image(image_index=image_index,device=device, 
-model_name=d['model_name'],model_type= d['model_type'],noise_level=r,startFactor=startFactor, video_image_path=video_image_path) 
+ for  r  in  rayleigh_list: 
+  image_result_path = 'image_'+ str(image_index) 
+  folder_path = 'ultrasound_results/' + image_result_path 
+  results += test_ultrasound_image(image_index=image_index,device=device, 
+  model_name=d['model_name'],model_type= d['model_type'],noise_level=r,startFactor=startFactor, video_image_path=video_image_path) 
 text_file = open(folder_path + 'test_results.txt', "w+") 
 text_file.write(results) 
 text_file.close() 
